@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>To-do</h1>
+        <div class="box-container">
+          <h2>Things to do</h2>
+          <div class="text">
+            <form action="/submit" method="post">
+              <label for="message"></label>
+              <!-- prettier-ignore -->
+              <input type="text" id="textarea" name="todo" placeholder="Enter things you want to do" required/>
+              <button type="submit">Add</button>
+            </form>
+          </div>
+          <div class="row-container"></div>
+          <ul>
+            <li>Video editing</li>
+            <li>Web Development</li>
+            <li>Reading</li>
+            <li>Project planning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
