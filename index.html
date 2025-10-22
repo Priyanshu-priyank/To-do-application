@@ -2,26 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDo Application</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>ToDo App</title>
   </head>
+
   <body>
-    <div class="container">
+    <div class="box">
       <div class="task-input">
-            <input type="text" id="inptxt" name="todo" placeholder="Add a new task" required/>
-            <img src="img/bar-icon.png">
+        <input type="text" placeholder="Add a new task" />
       </div>
-            <button type="submit">Add</button>
-        <div class="controls">
-          <div class="filter">
-            <span>All</span>
-            <span>Pending</span>
-            <span>finished</span>
-          </div>
-          <button class="clr-btn">Clear All</button>
-        <ul class="task-box"></ul>
+
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active"> All </span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
         </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+      <p id="tasks">0 tasks remaining</p>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
